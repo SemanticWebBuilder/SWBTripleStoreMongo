@@ -8,9 +8,12 @@
 
     <profiles>
       <profile>
-        <id>Default</id>
+        <id>Jitpack</id>
         <activation>
-          <activeByDefault>true</activeByDefault>
+          <property>
+            <name>jitpack</name>
+            <value>true</value>
+          </property>
         </activation>
         <repositories>
           <repository>
@@ -43,12 +46,9 @@
       </profile>
 
       <profile>
-        <id>Local</id>
+        <id>Default</id>
         <activation>
-          <property>
-            <name>local</name>
-            <value>true</value>
-          </property>
+          <activeByDefault>true</activeByDefault>
         </activation>
         <dependencies>
             <dependency>
