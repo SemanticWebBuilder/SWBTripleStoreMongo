@@ -22,6 +22,14 @@
  */
 package org.semanticwb.triplestore.mongo.ext;
 
+import org.semanticwb.Logger;
+import org.semanticwb.SWBPlatform;
+import org.semanticwb.SWBUtils;
+import org.semanticwb.rdf.GraphExt;
+import org.semanticwb.rdf.RGraph;
+import org.semanticwb.triplestore.mongo.SWBTSMongoPrefixMapping;
+import org.semanticwb.triplestore.mongo.SWBTSMongoUtil;
+
 import com.hp.hpl.jena.graph.Node;
 import com.hp.hpl.jena.graph.Triple;
 import com.hp.hpl.jena.graph.TripleMatch;
@@ -32,13 +40,6 @@ import com.mongodb.BasicDBObject;
 import com.mongodb.DB;
 import com.mongodb.DBCollection;
 import com.mongodb.MongoException;
-import org.semanticwb.Logger;
-import org.semanticwb.SWBPlatform;
-import org.semanticwb.SWBUtils;
-import org.semanticwb.rdf.GraphExt;
-import org.semanticwb.remotetriplestore.RGraph;
-import org.semanticwb.triplestore.mongo.SWBTSMongoPrefixMapping;
-import org.semanticwb.triplestore.mongo.SWBTSMongoUtil;
 
 /**
  *
